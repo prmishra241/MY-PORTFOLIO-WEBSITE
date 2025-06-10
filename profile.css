@@ -1,0 +1,120 @@
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: #f4f7f9;
+  color: #333;
+}
+
+nav {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+nav .logo {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #0077b6;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #0077b6;
+}
+/* Profile Section */
+.profile-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #dfe9f3, #ffffff);
+  padding: 3rem 2rem;
+  min-height: calc(100vh - 80px);
+  animation: fadeIn 1.2s ease-in;
+}
+
+.photo-box {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  animation: slideLeft 1s ease;
+}
+
+.profile-photo {
+  width: 280px;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.intro-box {
+  flex: 1 1 400px;
+  padding: 1.5rem;
+  animation: slideRight 1s ease;
+}
+
+.welcome-text {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.message {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 1rem;
+  color: #0077b6;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideLeft {
+  from { transform: translateX(-50px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideRight {
+  from { transform: translateX(50px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .profile-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .intro-box {
+    padding: 1rem;
+  }
+}

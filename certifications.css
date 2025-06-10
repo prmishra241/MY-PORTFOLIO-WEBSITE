@@ -1,0 +1,79 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f7f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+nav {
+  background: #fdfdfd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+nav .logo {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #0077b6;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #0077b6;
+}
+
+.certifications {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 2rem;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+  color: #0077b6;
+}
+
+.cert-box {
+  background: #fff;
+  padding: 1.5rem 1.8rem;
+  border-left: 5px solid #0077b6;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.cert-box h3 {
+  margin-top: 0;
+  color: #004b75;
+}
+
+.cert-box p {
+  margin: 0.3rem 0;
+  line-height: 1.5;
+}
+
+.note {
+  font-style: italic;
+  text-align: center;
+  margin-top: 3rem;
+  color: #666;
+}
